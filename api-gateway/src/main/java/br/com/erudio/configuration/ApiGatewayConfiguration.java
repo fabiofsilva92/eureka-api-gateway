@@ -17,7 +17,7 @@ public class ApiGatewayConfiguration {
 //						.filters(f -> f.addRequestHeader("Hello", "Word")
 //								.addRequestParameter("Hello", "Word"))
 //						.uri("http://httpbin.org:80"))
-				.route(p -> p.path("/api/invest/**").uri("lb://invest-app"))
+				.route(p -> p.path("/api/**").uri("lb://invest-app"))
 				.build();
 	}
 

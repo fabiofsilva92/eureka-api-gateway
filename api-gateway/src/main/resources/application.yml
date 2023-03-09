@@ -38,4 +38,8 @@ spring:
      - id: invest-application
        uri: lb://invest-app
        predicates: 
-       - Path=//api/invest/**
+       - Path=//api/**
+
+
+  main:
+    web-application-type: reactive
